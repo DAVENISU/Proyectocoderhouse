@@ -1,0 +1,214 @@
+/* Colores para reciclar en el código */
+:root {
+  /* Colores Pastel */
+  --pastel-blue: #a3c8f7; /* Azul pastel */
+  --pastel-lavender: #e0c8f1; /* Lavanda pastel */
+  --pastel-peach: #f8d1b1; /* Durazno pastel */
+  --pastel-green: #a8e0b1; /* Verde pastel */
+  --pastel-coral: #f7a3a1; /* Coral pastel */
+  --pastel-mint: #a3f7d1; /* Menta pastel */
+  --dark-gray: #2f3640; /* Gris oscuro */
+  --charcoal: #333333; /* Carbón */
+}
+
+/* General */
+body {
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+header {
+  background-color: var(--pastel-blue);
+  padding: 1rem;
+  box-shadow: 0 2px 4px black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.navbar .navbar-marca {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+  color: var(--pastel-blue);
+}
+
+/* Datos Section (Común para ambas páginas) */
+.Datos-section {
+  background-color: #3f4f5f;
+  background-image: url(img/Banner.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.Datos-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.Datos-section p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.Datos-section .btn {
+  background-color: var(--pastel-mint);
+  color: black;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Datos-section .btn:hover {
+  background-color: var(--dark-gray);
+  color: #fff;
+}
+
+/* Servicios Section */
+.Servicios-section {
+  padding: 50px 20px;
+  background-color: white;
+}
+
+.Servicios-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Servicios-tarjeta {
+  border: 1px solid white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Servicios-tarjeta:hover {
+  transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Agrega una sombra más profunda */
+}
+
+.Servicios-tarjeta h3 {
+  font-size: 1.6rem;
+}
+
+.Servicios-tarjeta p {
+  font-size: 1rem;
+  color: var(--charcoal);
+}
+
+.Servicios-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Servicios-tarjeta:nth-child(1) {
+  background-color: var(--pastel-coral);
+}
+
+.Servicios-tarjeta:nth-child(2) {
+  background-color: var(--pastel-lavender);
+}
+
+.Servicios-tarjeta:nth-child(3) {
+  background-color: var(--pastel-peach);
+}
+
+.Servicios-tarjeta:nth-child(4) {
+  background-color: var(--pastel-green);
+}
+
+/* Estilos para los botones en las tarjetas */
+.Servicios-tarjeta .btn {
+  background-color: var(--pastel-mint);
+  color: black;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Servicios-tarjeta .btn:hover {
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: var(--charcoal);
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+/* Específicos de la página de Servicios */
+.navbar .navbar-marca-servicios {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark-gray);
+  text-decoration: none;
+  background-color: white;
+}
+
+/* Ajustes para botones y efectos hover en general */
+.btn:hover {
+  background-color: var(--dark-gray);
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efectos de hover de las tarjetas */
+.Servicios-tarjeta:hover {
+  transform: translateY(-10px); /* Efecto de levantar las tarjetas */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+}
+/* Efectos de Hover en las tarjetas */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza el cambio */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Eleva la tarjeta al hacer hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más profunda al pasar el mouse */
+}
